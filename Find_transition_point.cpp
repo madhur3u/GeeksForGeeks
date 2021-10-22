@@ -7,8 +7,8 @@ int transitionPoint(int arr[], int n);
 
 int main() 
 {
-    int a[n] = {0,0,0,0,0,1,1,1}; // {0,0,0,0} //{1,1,1} //{0,1,1,1}
     int n = 8;
+    int a[n] = {0,0,0,0,0,1,1,1}; // {0,0,0,0} //{1,1,1} //{0,1,1,1}
     cout << transitionPoint(a, n) << endl;
     return 0;
 }
@@ -17,7 +17,7 @@ int main()
 // we use binary search here
 // we need to find 1st position of 1 and return that index
 // [1,1,1]     -->  in this ans is 0
-// [0,0,0,0,1] -->  in this ans is 4
+// [0,0,0,0,1] -->  in this ans is 4 (first index of 1)
 int transitionPoint(int a[], int n) {
     
     int low = 0;
